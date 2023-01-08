@@ -1,0 +1,139 @@
+
+html {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(#1f1f1f, #121212) fixed;
+  color: #ffffff;
+}
+
+.nav {
+  font-size: 18px;
+}
+
+a {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+a:hover {
+   	color: #00a0d1;
+    text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  color: #333333;
+  background-color: #333333;
+  border: none;
+  width: 75%;
+}
+
+/* video */
+.subdiv {
+    display: none;
+    animation-name: fadein;
+    animation-duration: 0.4s;
+} 
+.subdivSD {
+    display: none;
+    animation-name: fadein;
+    animation-duration: 0.4s;
+} 
+.subdivHD {
+    display: none;
+    animation-name: fadein;
+    animation-duration: 0.4s;
+} 
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.reveal {
+    color: #ffffff;
+	cursor: pointer;
+	margin: 5px 0;
+}
+
+.reveal::after{
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-bottom: -8px;
+	background-size: cover;
+	transition: transform 0.25s ease;
+	filter: invert(30%)
+}
+.reveal:hover::after{
+	transform: rotate(180deg);
+}
+
+.otherRevealText {
+  margin: 20px;
+}
+
+.videoTitle {
+  font-size: 36px;
+}
+
+.video-js {
+  box-shadow:
+             0.4em 0.4em 1em rgba(0,0,0,0.3);
+
+}
+
+#sd.quality-selector {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+#sd.quality-selector:hover {
+    color: #00a0d1;
+    text-decoration: underline;
+}
+
+#hd.quality-selector {
+    color: #00c3ff;
+    text-decoration: none;
+}
+
+#hd.quality-selector:hover {
+    color: #00a0d1;
+    text-decoration: underline;
+}
+
+/* mobile */
+@media (max-width: 476px) {
+  .sksb-logo {
+    block-size: 40px;
+  }
+  #fwe480.video-js {
+    width: 320px;
+    height: 180px;
+  }
+  #fwe720.video-js {
+    width: 320px;
+    height: 180px;
+  }
+  #fwse480.video-js {
+    width: 320px;
+    height: 173px;
+  }
+  #fwse720.video-js {
+    width: 320px;
+    height: 173px;
+  }
+  #win4-0 {
+    width: 320px;
+    height: 240px;
+  }
+  .videoTitle {
+    font-size: 24px;
+  }
+}
