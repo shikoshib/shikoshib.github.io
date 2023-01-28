@@ -1165,8 +1165,6 @@ async function dlLevel(level) {
     if(!level || level == "") throw new Error("Please provide a level ID.");
     if(isNaN(level)) throw new Error("The level parameter should be a number.");
 
-    let xor = new XOR();
-
     const data = {
         gameVersion: 21,
         binaryVersion: 35,
