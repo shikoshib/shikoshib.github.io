@@ -527,3 +527,10 @@ async function uploadMessage(receiver, subj, content, user, pass) {
 
     return res.data;
 }
+
+async function getTab(tab, page) {
+    let res = await gjWReq("getTab", `${tab}?page=${page}`)
+    if(res.status == 403) console.error(res.data.error)
+
+    return res.data;
+}
